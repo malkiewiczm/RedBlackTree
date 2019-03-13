@@ -1,0 +1,15 @@
+Example red black tree insertion with a test.
+
+This is a "left leaning" red black tree, essentially a way of
+implementing a 2-3 tree in the form of a BST.
+
+Both random data and sorted order (worst case for normal BST) are
+given.
+
+The tests include testing the height of the tree as well as making
+sure that all of the data can actually be found in the tree using a
+standard BST traversal.
+
+Compile with `make`
+
+Run with `./main.app`
