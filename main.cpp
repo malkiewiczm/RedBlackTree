@@ -44,6 +44,17 @@ static void populate_order()
 	}
 }
 
+static void populate_modal()
+{
+	constexpr int half = N / 2;
+	for (int i = 0; i < half; ++i) {
+		data[i] = i;
+	}
+	for (int i = half; i < N; ++i) {
+		data[i] = N - i;
+	}
+}
+
 static void run_test(InsertFunc insert, const char *name)
 {
 	Node *root = nullptr;
@@ -81,4 +92,6 @@ int main()
 	bench("Random data");
 	populate_order();
 	bench("Ordered data");
+	populate_modal();
+	bench("Unimodal data");
 }

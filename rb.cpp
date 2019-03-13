@@ -2,9 +2,6 @@
 
 static void flip_colors(Node* root)
 {
-	assert(! is_red(root));
-	assert(is_red(root->left));
-	assert(is_red(root->right));
 	root->color = RED;
 	root->left->color = BLACK;
 	root->right->color = BLACK;
